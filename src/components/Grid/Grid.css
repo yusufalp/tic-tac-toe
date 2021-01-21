@@ -1,11 +1,17 @@
 .grid {
   border: 1px solid black;
   border-radius: 0;
-  font-size: 32px;
+  font-size: calc(100vw / 15);
   display: inline-block;
   justify-content: center;
   vertical-align: top;
-  padding-top: 4px;
-  height: 44px;
-  width: 48px;
+  padding-top: calc(100vw / 75);
+  height: calc(100vw / 10);
+  width: calc(100vw / 10);
+}
+
+.small-grid {
+  font-size: calc(100vw / 40);
+  height: calc(100vw / 25);
+  width: calc(100vw / 25);
 }
