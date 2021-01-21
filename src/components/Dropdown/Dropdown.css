@@ -1,0 +1,8 @@
+.board-select {
+  margin: 12px 0;
+}
+
+select {
+  display: block;
+  margin: 3px auto;
+}
