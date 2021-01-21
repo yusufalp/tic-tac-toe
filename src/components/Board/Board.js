@@ -63,7 +63,12 @@ const Board = (props) => {
   let status = "";
 
   if (!winner) {
-    status = `Next player: ${isXsTurn ? "X" : "O"}`;
+    const isNull = currentValue => currentValue === null;
+    if (!allGrids.some(isNull)) {
+      status = "Game over, it is a tie"
+    } else {
+      status = `Next player: ${isXsTurn ? "X" : "O"}`;
+    }
   } else {
     status = winner;
   }
