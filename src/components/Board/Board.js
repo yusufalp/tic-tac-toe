@@ -87,7 +87,7 @@ const Board = (props) => {
 
   return (
     <div className="board">
-      <p>{status}</p>
+      <p className={`status ${status.startsWith("Game") || status === winner ? "win" : "tie"}`}>{status}</p>
       {allGrids.map((grid, i) => {
         return (
           <Grid
