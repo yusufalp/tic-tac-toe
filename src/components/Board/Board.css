@@ -2,7 +2,23 @@
   font-size: 0;
 }
 
-.board p {
+.status {
+  border: none;
+  border-radius: 5px;
+  color: #1d3354;
   font-size: 16px;
-  margin: 12px auto;
+  width: 50vw;
+  margin: 36px auto 6px;
+  padding: 6px 0;
+}
+
+.win {
+  background-color: #c3423f;
+  color: #e9fff9;
+}
+
+@media all and (min-width: 480px) {
+  .status {
+    width: 24vw;
+  }
 }
