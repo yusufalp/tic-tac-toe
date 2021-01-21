@@ -1,8 +1,12 @@
 .board-select {
-  margin: 12px 0;
+  margin: 36px auto 6px;
 }
 
 select {
+  border: 1px solid black;
+  border-radius: 10px;
   display: block;
-  margin: 3px auto;
+  font-size: 18px;
+  padding: 6px 12px;
+  margin: 6px auto;
 }
