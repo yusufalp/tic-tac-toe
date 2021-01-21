@@ -1,3 +1,8 @@
 .board {
   font-size: 0;
 }
+
+.board p {
+  font-size: 16px;
+  margin: 12px auto;
+}
