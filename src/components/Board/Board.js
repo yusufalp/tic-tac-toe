@@ -7,46 +7,46 @@ const Board = (props) => {
   const [allGrids, setAllGrids] = useState(Array(props.rows * props.rows).fill(null));
 
   const announceWinner = () => {
-    let result = [];
+    const result = [];
 
-    let newArr = [];
+    let linesToCheck = [];
     let index = 0;
 
     for (let i = 0; i < props.rows; i++) {
-      newArr = [];
+      linesToCheck = [];
       for (let j = 0; j < props.rows; j++) {
-        newArr.push(allGrids[j + index]);
+        linesToCheck.push(allGrids[j + index]);
       }
-      result.push(newArr);
+      result.push(linesToCheck);
       index += props.rows;
     }
 
     for (let i = 0; i < props.rows; i++) {
       index = i;
-      newArr = [];
+      linesToCheck = [];
       for (let j = 0; j < props.rows; j++) {
-        newArr.push(allGrids[index]);
+        linesToCheck.push(allGrids[index]);
         index += props.rows;
       }
-      result.push(newArr);
+      result.push(linesToCheck);
     }
 
-    newArr = [];
+    linesToCheck = [];
     index = 0;
     for (let i = 0; i < props.rows; i++) {
-      newArr.push(allGrids[i + index]);
+      linesToCheck.push(allGrids[i + index]);
       index += props.rows;
     }
-    result.push(newArr);
+    result.push(linesToCheck);
 
-    newArr = [];
+    linesToCheck = [];
     index = props.rows - 1;
     let start = allGrids.length - 1;
     for (let i = 0; i < props.rows; i++) {
-      newArr.push(allGrids[start - index]);
+      linesToCheck.push(allGrids[start - index]);
       index += props.rows - 1;
     }
-    result.push(newArr);
+    result.push(linesToCheck);
 
     const isX = currentValue => currentValue === "X";
     const isO = currentValue => currentValue === "O";
