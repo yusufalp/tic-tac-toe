@@ -1,5 +1,5 @@
 .grid {
-  border: 2px solid #faedca;
+  border: 1px solid #faedca;
   border-radius: 5px;
   font-size: calc(100vw / 20);
   display: inline-block;
