@@ -1,17 +1,26 @@
 .grid {
-  border: 1px solid black;
-  border-radius: 0;
-  font-size: calc(100vw / 15);
+  border: 2px solid #faedca;
+  border-radius: 5px;
+  font-size: calc(100vw / 20);
   display: inline-block;
   justify-content: center;
   vertical-align: top;
   padding-top: calc(100vw / 75);
-  height: calc(100vw / 10);
-  width: calc(100vw / 10);
+  height: calc(100vw / 15);
+  width: calc(100vw / 15);
+  margin: 1px;
 }
 
 .small-grid {
   font-size: calc(100vw / 40);
-  height: calc(100vw / 25);
-  width: calc(100vw / 25);
+  height: calc(100vw / 30);
+  width: calc(100vw / 30);
+}
+
+.red {
+  color: #fb6376;
+}
+
+.green {
+  color: #7ebc89;
 }
