@@ -29,14 +29,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### To embed the Board onto your own
 
-Copy the following components into your own React app
+Copy the following components into your own React app in the same directory
 
 - `Board`
 - `Grid`
 - `Dropdown`
 - `Button`
 
-`Important Note`: You are expected to have a function that calculates the winner. If not, you can always use the `announceWinner` component.
+**Important Note**: You are expected to have a function that calculates the winner. If not, you can always use the `AnnounceWinner` component.
 
 ## Technologies Used
 
