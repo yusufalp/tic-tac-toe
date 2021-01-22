@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Board from '../Board/Board';
 import Dropdown from '../Dropdown/Dropdown';
 import Button from '../Button/Button';
@@ -9,17 +9,24 @@ for (let i = 3; i <= 20; i++) {
 }
 
 const Game = () => {
-  const [rows, setRows] = useState(3);
-  const [didStart, setDidStart] = useState(false);
+  const getDidStart = sessionStorage.getItem("did-start") === "true";
+  const [rows, setRows] = useState(Number(sessionStorage.getItem("initial-rows-selected")) || 3);
+  const [didStart, setDidStart] = useState(getDidStart || false);
+
+  useEffect(() => {
+    sessionStorage.setItem("initial-rows-selected", rows.toString());
+    sessionStorage.setItem("did-start", didStart.toString());
+  })
 
   const handleReset = () => {
+    sessionStorage.clear();
     setRows(3);
     setDidStart(false);
   }
 
   const renderedGame = didStart
     ? (<React.Fragment>
-      <Button handleClick={handleReset}>Reset</Button>
+      <Button handleClick={handleReset}>Main Menu</Button>
       <Board
         rows={rows}
       />
