@@ -10,8 +10,16 @@ const Dropdown = (props) => {
             name="board-size"
             onChange={props.handleSelect}
           >
+            <option value="" selected="selected">Select an option</option>
             {props.items.map((item, i) => {
-              return <option key={i} value={item}>{`${item}x${item}`}</option>
+              return (
+                <option
+                  key={i}
+                  value={item}
+                >
+                  {`${item}x${item}`}
+                </option>
+              )
             })}
           </select>
         </label>
