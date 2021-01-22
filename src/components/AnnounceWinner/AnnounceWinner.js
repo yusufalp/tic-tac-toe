@@ -1,3 +1,10 @@
+/*
+  Create a new array of arrays (result), to split the allGrids
+  array into rows, columns or diagonals we are going to check for the winner.
+  While we are splitting, we are also changing the initial value of "null"
+  with "X" or "O", which ever is clicked by the user.
+*/
+
 export const announceWinner = (rows, allGrids) => {
   const result = [];
 
@@ -39,6 +46,12 @@ export const announceWinner = (rows, allGrids) => {
     index += rows - 1;
   }
   result.push(linesToCheck);
+
+  /*
+  Every time a new square is clicked, we check if the chunks of arrays
+  we splitted above meets the criteria of winning, that is if values
+  in one of the arrays are either all X or all O.
+  */
 
   const isX = currentValue => currentValue === "X";
   const isO = currentValue => currentValue === "O";
