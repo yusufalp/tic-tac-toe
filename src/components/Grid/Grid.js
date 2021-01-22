@@ -1,11 +1,10 @@
-import React from 'react';
 import './Grid.css';
 
 const Grid = (props) => {
   return (
     <>
       <div
-        className={`grid ${props.rows >= 10 ? "small-grid" : ""}`}
+        className={`grid ${props.rows >= 10 ? "small-grid" : ""} ${props.value === "X" ? "red" : "green"}`}
         onClick={() => props.handleGridClick(props.index)}>
         {props.value}
       </div>
