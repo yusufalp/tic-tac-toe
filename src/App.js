@@ -1,5 +1,6 @@
 import './App.css';
-import Game from './components/Game/Game';
+import Board from './components/Board/Board';
+// import Game from './components/Game/Game';
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
         <h1>Tic-Tac-Toe</h1>
       </header>
       <main>
-        <Game />
+        <Board />
+        {/* <Game /> */}
       </main>
     </div>
   );
