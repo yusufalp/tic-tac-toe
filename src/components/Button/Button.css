@@ -1,13 +1,18 @@
 button {
-  background-color: #467599;
-  color: #e9fff9;
+  background-color: #faedca;
+  color: #1d3354;
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px 2px #1d3354;
   font-size: 16px;
   padding: 12px 18px;
+  margin: 6px auto;
 }
 
 button:focus {
   outline: none;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
