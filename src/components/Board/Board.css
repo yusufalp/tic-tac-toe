@@ -3,6 +3,7 @@
 }
 
 .status {
+  background-color: #faedca;
   border: none;
   border-radius: 5px;
   color: #1d3354;
@@ -12,9 +13,14 @@
   padding: 6px 0;
 }
 
-.win {
-  background-color: #c3423f;
-  color: #e9fff9;
+.red-win {
+  background-color: #fb6376;
+  color: #faedca;
+}
+
+.green-win {
+  background-color: #7ebc89;
+  color: #faedca;
 }
 
 @media all and (min-width: 480px) {
