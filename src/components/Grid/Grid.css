@@ -13,8 +13,8 @@
 
 .small-grid {
   font-size: calc(100vw / 40);
-  height: calc(100vw / 30);
-  width: calc(100vw / 30);
+  height: calc(100vw / 25);
+  width: calc(100vw / 25);
 }
 
 .red {
